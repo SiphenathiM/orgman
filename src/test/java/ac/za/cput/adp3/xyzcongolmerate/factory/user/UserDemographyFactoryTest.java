@@ -29,5 +29,6 @@ public class UserDemographyFactoryTest {
 
         UserDemography userDemography = UserDemographyFactory.buildUserDemography("Sphe@gmail.com","Mr","001","020",date_Of_Birth);
         Assert.assertEquals("Sphe@gmail.com",userDemography.getUserEmail());
+        Assert.assertNotNull(userDemography);
     }
 }
