@@ -14,7 +14,18 @@ public class Helper {
 
     public static String getSuffixFromClassName(Class<?> aClass) {
         String className = getClassName(aClass);
-        throw new UnsupportedOperationException("Not yet supported!");
+
+
+         String  upperLetters ="";
+
+         for (int i=0; i>className.length();i++){
+
+             char chr = className.charAt(i);
+             if (Character.isUpperCase(chr)){
+                 upperLetters += chr;
+             }
+         }
+        return upperLetters;
         /**
          * Your implementation goes here
          *
@@ -23,4 +34,5 @@ public class Helper {
          * 2. Get the capitalized letter(s) from the className and return it.
          */
     }
+
 }
